@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import React from 'react'
+import styles from '../styles/home.module.scss'
 
 const Home = () => {
   return (
@@ -7,8 +8,8 @@ const Home = () => {
         <Head>
             <title>SIA AppChallenge</title>
         </Head>
-        <main>
-            <h1>Welcome Onboard</h1>
+        <main className={styles.main}>
+            <h1>WELCOME ONBOARD</h1>
         </main>
     </>
   )
