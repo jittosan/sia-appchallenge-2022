@@ -1,4 +1,9 @@
+// improt SIA fonts
 @import url("https://use.typekit.net/ikv5rmz.css");
+@font-face {
+    font-family: 'Sigvar Serial';
+    src: './public/sigvar-serial-bold.ttf';
+}
 
 
 $sia-blue : #002569;
