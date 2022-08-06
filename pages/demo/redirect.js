@@ -52,7 +52,8 @@ const LandingPageRedirect = () => {
   return (
     <>
         <Head>
-            <title>SIA IFE</title>
+        <title>KrisWorld - In-Flight Entertainment</title>
+            <link rel='shortcut icon' href='https://play-lh.googleusercontent.com/03_65Ntwo2axa8mAmf7hhuYhWBhCj0gM4cEqKwHjOrBmSuf75wH5ORdRjUAFNt25Kg' />
         </Head>
     <main className={styles.main} ref={(el) => {containerRef=el}}>
       <div className={`content ${styles.content}`}>
