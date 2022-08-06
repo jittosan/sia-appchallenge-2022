@@ -49,19 +49,54 @@ const NoApp = () => {
         </Head>
         <main className={styles.main} ref={(el) => {containerRef=el}}>
             <div className={`content ${styles.content}`}>
-                <h1>Explore Your In-Flight Entertainment (IFE) Options</h1>
-                <p>Get the <Link  target={'_blank'} rel={'noopener noreferrer'} href={'https://play.google.com/store/apps/details?id=com.amadeus.merci.client.ui&hl=en_SG&gl=US'}>SingaporeAir app</Link> for the full experience.</p>
-                <br />
-                <p>TOOLS FOR KRISWORLD</p>
-                <br />
+                <div>
+                    <h1>Your In-Flight Entertainment (IFE)</h1>
+                    <p>Get the <Link  target={'_blank'} rel={'noopener noreferrer'} href={'https://play.google.com/store/apps/details?id=com.amadeus.merci.client.ui&hl=en_SG&gl=US'}>SingaporeAir app</Link> for the full experience.</p>
+                </div>
+                <DemoCarousell />
                 <p>Alternatively, read up on IFE features at <Link target={'_blank'} rel={'noopener noreferrer'} href={'https://kw.sq.com'}><span>kw.sq.com</span></Link>.</p>
-            </div>
             <div className={`logo ${styles.branding}`}>
                 <img src='https://design.singaporeair.com.sg/assets/images/brand-assets/linear-stacked-3@2x.png' />
             </div>
+            </div>
         </main>
-        </>
+        </> 
     )
 }
 
 export default NoApp
+
+const DemoCarousell = () => { 
+    return(
+        <ul className={styles.demoCarousell}>
+            <li>
+                <img src='https://www.singaporeair.com/saar5/images/media-centre/multimedia-library/hires/fb-pey-beef.jpg' />
+                <div>
+                    <strong>In-flight Menu</strong>
+                    <p>Check your menu.</p>
+                </div>
+            </li>
+            <li>
+                <img src='https://www.singaporeair.com/saar5/images/media-centre/multimedia-library/hires/ife-jcl-1.jpg' />
+                <div>
+                    <strong>In-flight Connectivity</strong>
+                    <p>Connect your phone to our seatback.</p>
+                </div>
+            </li>
+            <li>
+                <img src='https://www.singaporeair.com/saar5/images/media-centre/multimedia-library/hires/pdt-b777-ey5.jpg' />
+                <div>
+                    <strong>Music Playlists</strong>
+                    <p>Create your own music playlists.</p>
+                </div>
+            </li>
+            <li>
+                <img src='https://www.singaporeair.com/saar5/images/media-centre/multimedia-library/hires/pdt-b777-ey2.jpg' />
+                <div>
+                    <strong>Movie Catalogue</strong>
+                    <p>Browse our catalogue of movies.</p>
+                </div>
+            </li>
+        </ul>
+    )
+}
