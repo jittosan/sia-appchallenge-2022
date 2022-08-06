@@ -14,7 +14,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('https://www.singaporeair.com/saar5/images/media-centre/multimedia-library/hires/prdt-a380-newjcl-1.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('https://www.singaporeair.com/saar5/images/media-centre/multimedia-library/hires/prdt-a380-newjcl-1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 53% 10%;
@@ -62,9 +62,42 @@
 
     span {
         border-bottom: 2px solid $sia-gold;
+        // background-color: $sia-gold;
         cursor: pointer;
     }
 
+    .downloadLinkContainer {
+        width: 100%;
+        max-width: 450px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr auto;
+        
+        .siaAppLogo {
+            position: relative;
+            margin: auto;
+            height: 80px;
+            width: 80px;
+            border-radius: 2ch;
+            grid-row: 1;
+            grid-column: 1;
+        }
+        
+        .downloadButton {
+            margin: 2ch;
+            grid-row: 1;
+            height: 150px;
+            width: 150px;
+        }
+
+        p {
+            text-align: center;
+            grid-row: 2;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    }
+        
     .branding {
         width: 100%;
         text-align: center;

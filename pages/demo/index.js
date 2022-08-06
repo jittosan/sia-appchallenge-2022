@@ -55,17 +55,17 @@ const LandingPageDemo = () => {
                     {/* <p>Get the <Link  target={'_blank'} rel={'noopener noreferrer'} href={'https://play.google.com/store/apps/details?id=com.amadeus.merci.client.ui&hl=en_SG&gl=US'}>SingaporeAir app</Link> for the full experience.</p> */}
                 </div>
                 <DemoCarousell />
-                <div>
-                    <p>Get the App</p>
-                    <Image alt='App Store Badge' height={100} width={150} src={'/app-store-badge.svg'} />
-                    <Image alt='Play Store Badge' height={100} width={150} src={'/google-play-badge.svg'} />
+                <div className={styles.downloadLinkContainer}>
+                    <img className={styles.siaAppLogo} src='https://play-lh.googleusercontent.com/03_65Ntwo2axa8mAmf7hhuYhWBhCj0gM4cEqKwHjOrBmSuf75wH5ORdRjUAFNt25Kg' />
+                    <Link  target={'_blank'} rel={'noopener noreferrer'} href={'https://apps.apple.com/sg/app/singapore-airlines/id515287841'}><Image className={styles.downloadButton} alt='App Store Badge' height={120} width={150} src={'/app-store-badge.svg'} /></Link>
+                    <Link  target={'_blank'} rel={'noopener noreferrer'} href={'https://play.google.com/store/apps/details?id=com.amadeus.merci.client.ui&hl=en_SG&gl=US'}><Image className={styles.downloadButton} alt='App Store Badge' height={120} width={150} src={'/google-play-badge.svg'} /></Link>
+                    <p className={styles.alternateLink}>Get the free SingaporeAir app for the full experience.</p>
                 </div>
-                {/* <img src='https://play-lh.googleusercontent.com/03_65Ntwo2axa8mAmf7hhuYhWBhCj0gM4cEqKwHjOrBmSuf75wH5ORdRjUAFNt25Kg' /> */}
-                <p className={styles.alternateLink}>Get the free <Link  target={'_blank'} rel={'noopener noreferrer'} href={'https://play.google.com/store/apps/details?id=com.amadeus.merci.client.ui&hl=en_SG&gl=US'}><span>SingaporeAir app</span></Link> for the full experience.</p>
+                <br />
                 <br />
                 <p className={styles.alternateLink}>Alternatively, read up our IFE features at <Link target={'_blank'} rel={'noopener noreferrer'} href={'https://kw.sq.com'}><span>kw.sq.com</span></Link>.</p>
             <div className={`logo ${styles.branding}`}>
-                <img src='https://design.singaporeair.com.sg/assets/images/brand-assets/linear-stacked-3@2x.png' />
+                <img src='https://design.singaporeair.com.sg/assets/images/brand-assets/linear-stacked-3@2x.png' /> 
             </div>
             </div>
         </main>
