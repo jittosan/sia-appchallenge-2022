@@ -8,10 +8,11 @@ const Home = () => {
     return (
         <>
             <Head>
-                <title>SIA AppChallenge</title>
+                <title>SIA AppChallenge - Team DJ</title>
             </Head>
             <main className={styles.main}>
                 <h1>WELCOME ONBOARD</h1>
+                <p>Team DJ</p>
                 <br />
                 <Link href={'/demo/redirect'}>Demo (app installed)</Link>
                 <br />
