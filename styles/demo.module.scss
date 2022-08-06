@@ -29,14 +29,14 @@
         }
         padding-bottom: 8ch;
         width: 100%;
-        max-width: 850px;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         text-align: center;
-        overflow: scroll;
+        // scrollign properties
+        overflow-y: scroll;
 
         .headerSection {
             position: relative;

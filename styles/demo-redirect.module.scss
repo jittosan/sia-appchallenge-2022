@@ -14,7 +14,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('https://www.singaporeair.com/saar5/images/media-centre/multimedia-library/hires/prdt-a380-newjcl-1.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('https://www.singaporeair.com/saar5/images/media-centre/multimedia-library/hires/prdt-a380-newjcl-1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 53% 10%;
@@ -35,7 +35,7 @@
         justify-content: flex-start;
         align-items: center;
         text-align: center;
-        overflow: scroll;
+        overflow: hidden;
 
         .headerSection {
             position: relative;
@@ -66,6 +66,8 @@
     }
 
     .branding {
+        position: absolute;
+        bottom: 5ch;
         width: 100%;
         text-align: center;
         width: auto;
