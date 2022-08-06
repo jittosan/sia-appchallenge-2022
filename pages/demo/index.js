@@ -50,9 +50,9 @@ const LandingPageDemo = () => {
         <main className={styles.main} ref={(el) => {containerRef=el}}>
             <div className={`content ${styles.content}`}>
                 <div className={styles.headerSection}>
-                    <h1>Your In-Flight Entertainment</h1>
-                    <p>Explore our in-flight entertainment (IFE) features from your phone before you board.</p>
-                    {/* <p>Get the <Link  target={'_blank'} rel={'noopener noreferrer'} href={'https://play.google.com/store/apps/details?id=com.amadeus.merci.client.ui&hl=en_SG&gl=US'}>SingaporeAir app</Link> for the full experience.</p> */}
+                    <h1>Your In-Flight Entertainment.</h1>
+                    {/* <br /> */}
+                    <p>Explore our in-flight entertainment (IFE) features on your phone.</p>
                 </div>
                 <DemoCarousell />
                 <div className={styles.downloadLinkContainer}>
@@ -81,29 +81,29 @@ const DemoCarousell = () => {
             <li>
                 <img src='https://www.singaporeair.com/saar5/images/media-centre/multimedia-library/hires/fb-pey-beef.jpg' />
                 <div>
-                    <strong>In-flight Menu</strong>
-                    <p>Check your menu.</p>
+                    <strong>In-Flight Catering</strong>
+                    <p>Preview your in-flight food, beverage, amenity and snack offerings before your board.</p>
                 </div>
             </li>
             <li>
-                <img src='https://www.singaporeair.com/saar5/images/media-centre/multimedia-library/hires/ife-jcl-1.jpg' />
+                <img src='https://www.singaporeair.com/saar5/images/media-centre/multimedia-library/hires/pdt-b777-JCL4.jpg' />
                 <div>
-                    <strong>In-flight Connectivity</strong>
-                    <p>Connect your phone to our seatback.</p>
+                    <strong>In-Flight Connectivity</strong>
+                    <p>Stay conveniently connected with our onboard Wi-Fi.</p>
                 </div>
             </li>
             <li>
-                <img src='https://www.singaporeair.com/saar5/images/media-centre/multimedia-library/hires/pdt-b777-ey5.jpg' />
+                <img src='https://www.singaporeair.com/saar5/images/media-centre/multimedia-library/hires/pdt-b777-ey1.jpg' />
                 <div>
                     <strong>Music Playlists</strong>
-                    <p>Create your own music playlists.</p>
+                    <p>Create your music playlist in-app and play it once onboard.</p>
                 </div>
             </li>
             <li>
                 <img src='https://www.singaporeair.com/saar5/images/media-centre/multimedia-library/hires/pdt-b777-ey2.jpg' />
                 <div>
                     <strong>Movie Catalogue</strong>
-                    <p>Browse our catalogue of movies.</p>
+                    <p>Browse our wide catalogue of movies in-app and save them to watch onboard.</p>
                 </div>
             </li>
         </ul>
