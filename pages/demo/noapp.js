@@ -49,12 +49,16 @@ const NoApp = () => {
         </Head>
         <main className={styles.main} ref={(el) => {containerRef=el}}>
             <div className={`content ${styles.content}`}>
-                <div>
-                    <h1>Your In-Flight Entertainment (IFE)</h1>
-                    <p>Get the <Link  target={'_blank'} rel={'noopener noreferrer'} href={'https://play.google.com/store/apps/details?id=com.amadeus.merci.client.ui&hl=en_SG&gl=US'}>SingaporeAir app</Link> for the full experience.</p>
+                <div className={styles.headerSection}>
+                    <h1>Your In-Flight Entertainment</h1>
+                    <p>Explore our in-flight entertainment (IFE) features from your phone before you board.</p>
+                    {/* <p>Get the <Link  target={'_blank'} rel={'noopener noreferrer'} href={'https://play.google.com/store/apps/details?id=com.amadeus.merci.client.ui&hl=en_SG&gl=US'}>SingaporeAir app</Link> for the full experience.</p> */}
                 </div>
                 <DemoCarousell />
-                <p>Alternatively, read up on IFE features at <Link target={'_blank'} rel={'noopener noreferrer'} href={'https://kw.sq.com'}><span>kw.sq.com</span></Link>.</p>
+                {/* <img src='https://play-lh.googleusercontent.com/03_65Ntwo2axa8mAmf7hhuYhWBhCj0gM4cEqKwHjOrBmSuf75wH5ORdRjUAFNt25Kg' /> */}
+                <p className={styles.alternateLink}>Get the free <Link  target={'_blank'} rel={'noopener noreferrer'} href={'https://play.google.com/store/apps/details?id=com.amadeus.merci.client.ui&hl=en_SG&gl=US'}><span>SingaporeAir app</span></Link> for the full experience.</p>
+                <br />
+                <p className={styles.alternateLink}>Alternatively, read up our IFE features at <Link target={'_blank'} rel={'noopener noreferrer'} href={'https://kw.sq.com'}><span>kw.sq.com</span></Link>.</p>
             <div className={`logo ${styles.branding}`}>
                 <img src='https://design.singaporeair.com.sg/assets/images/brand-assets/linear-stacked-3@2x.png' />
             </div>

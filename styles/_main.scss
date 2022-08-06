@@ -9,3 +9,12 @@
 $sia-blue : #002569;
 $sia-gold: #8A6C4C;
 $sia-yellow: #FF9F00;
+
+
+// MIXINS
+$mobile-threshold: 650px;
+@mixin mobile-layout {
+    @media (max-width: $mobile-threshold) {
+        @content
+    }
+}
