@@ -1,9 +1,10 @@
 import React, { useEffect, useRef } from 'react'
 import Link from 'next/link'
-import styles from '../../styles/noapp.module.scss'
+import styles from '../../styles/demo.module.scss'
 import gsap, { Power3 } from 'gsap'
 import { childComponentSelector } from '../../scripts/animations'
 import Head from 'next/head'
+import Image from 'next/image'
 
 const LandingPageDemo = () => {
     // ANIMATION METHODS
@@ -16,7 +17,6 @@ const LandingPageDemo = () => {
         }, {
         opacity:1,
         duration: 0.8,
-        delay: 0.3,
         ease: Power3.easeInOut
         })
         // float up content
@@ -55,6 +55,11 @@ const LandingPageDemo = () => {
                     {/* <p>Get the <Link  target={'_blank'} rel={'noopener noreferrer'} href={'https://play.google.com/store/apps/details?id=com.amadeus.merci.client.ui&hl=en_SG&gl=US'}>SingaporeAir app</Link> for the full experience.</p> */}
                 </div>
                 <DemoCarousell />
+                <div>
+                    <p>Get the App</p>
+                    <Image alt='App Store Badge' height={100} width={150} src={'/app-store-badge.svg'} />
+                    <Image alt='Play Store Badge' height={100} width={150} src={'/google-play-badge.svg'} />
+                </div>
                 {/* <img src='https://play-lh.googleusercontent.com/03_65Ntwo2axa8mAmf7hhuYhWBhCj0gM4cEqKwHjOrBmSuf75wH5ORdRjUAFNt25Kg' /> */}
                 <p className={styles.alternateLink}>Get the free <Link  target={'_blank'} rel={'noopener noreferrer'} href={'https://play.google.com/store/apps/details?id=com.amadeus.merci.client.ui&hl=en_SG&gl=US'}><span>SingaporeAir app</span></Link> for the full experience.</p>
                 <br />

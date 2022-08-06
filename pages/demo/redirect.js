@@ -1,8 +1,9 @@
 import { gsap, Power3 } from 'gsap'
 import Head from 'next/head'
+import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'
 import { childComponentSelector } from '../../scripts/animations'
-import styles from '../../styles/demo.module.scss'
+import styles from '../../styles/demo-redirect.module.scss'
 
 const LandingPageRedirect = () => {
   // ANIMATION METHODS
@@ -55,12 +56,12 @@ const LandingPageRedirect = () => {
         </Head>
     <main className={styles.main} ref={(el) => {containerRef=el}}>
       <div className={`content ${styles.content}`}>
-        <h1>Explore Your In-Flight Entertainment (IFE) Options</h1>
-        <p>Redirecting you to the <span>SingaporeAir app</span> for the best experience</p>
+        <h1>Your In-Flight Entertainment</h1>
+        <p>Redirecting you to the SingaporeAir app</p>
       </div>
       {krisworldLoaded ? <KrisWorldEmulation /> : ''}
       <div className={`logo ${styles.branding}`}>
-        <img src='https://design.singaporeair.com.sg/assets/images/brand-assets/linear-stacked-1@2x.png' />
+          <img src='https://design.singaporeair.com.sg/assets/images/brand-assets/linear-stacked-3@2x.png' />
       </div>
     </main>
     </>
@@ -90,6 +91,7 @@ const KrisWorldEmulation = () => {
   return(
     <div className={styles.krisworldemulation} ref={(el) => {containerRef=el}}>
       <strong>Insert KrisWorld Screen Recording Here</strong>
+      <Image src='/krisworld-sia-app-ss.jpg' layout='fill' />
     </div>
   )
 }
