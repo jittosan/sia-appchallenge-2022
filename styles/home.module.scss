@@ -14,12 +14,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('https://media-private.canva.com/PyAdk/MAEEgfPyAdk/1/s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20220805%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220805T132008Z&X-Amz-Expires=36523&X-Amz-Signature=4b823f3ad121fddf7756e557f303829462baf4daea922318ad7f88e3076dbd49&X-Amz-SignedHeaders=host&response-expires=Fri%2C%2005%20Aug%202022%2023%3A28%3A51%20GMT');
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('https://media-private.canva.com/PyAdk/MAEEgfPyAdk/1/s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20220805%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220805T132008Z&X-Amz-Expires=36523&X-Amz-Signature=4b823f3ad121fddf7756e557f303829462baf4daea922318ad7f88e3076dbd49&X-Amz-SignedHeaders=host&response-expires=Fri%2C%2005%20Aug%202022%2023%3A28%3A51%20GMT');
+    // background-image: url('https://www.singaporeair.com/saar5/images/media-centre/multimedia-library/hires/gs-customerservicedesk-1.jpg');
+    background: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.4)), url('https://www.singaporeair.com/saar5/images/media-centre/multimedia-library/hires/gs-customerservicedesk-1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 53% 10%;
-    backdrop-filter: brightness(50%);
+    background-position: 70% 10%;
+    // backdrop-filter: brightness(50%);
     overflow: hidden;
 
     .content {
@@ -29,6 +29,7 @@
         justify-content: flex-start;
         align-items: center;
         text-align: center;
+        overflow: auto;
 
         h1 {
             font-size: 2.2rem;
@@ -56,6 +57,56 @@
         img {
             height: auto;
             width: 150px;
+        }
+    }
+}
+
+.demoLinksContainer {
+    position: relative;
+    width: 100%;
+    padding: 2ch;
+    max-width: 100ch;
+    height: auto;
+
+    ul {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2ch;
+        @include mobile-layout {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            row-gap: 2ch;
+        }
+
+        li {
+            list-style: none;
+            padding: 2ch;
+            background-color: whitesmoke;
+            color: black;
+            width: 100%;
+            cursor: pointer;
+            border: 2px solid whitesmoke;
+            filter: drop-shadow(0px 5px 0px $sia-gold);
+
+            &:hover {
+                filter: drop-shadow(2px 8px 0px $sia-gold);
+            }
+
+            h3 {
+                padding-top: 10ch;
+                line-height: 1ch;
+            }
+
+            span {
+                line-height: 1.2ch;
+                font-weight: 0.6;
+                color: grey;
+            }
+
+            p {
+                line-height: 1.8ch
+            }
         }
     }
 }
