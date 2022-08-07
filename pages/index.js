@@ -5,6 +5,7 @@ import Image from 'next/image'
 import React, { useEffect, useRef } from 'react'
 import { childComponentSelector } from '../scripts/animations'
 import styles from '../styles/home.module.scss'
+import YouTube from 'react-youtube'
 
 const Home = () => {
     // LOAD-IN ANIMATION
@@ -72,6 +73,7 @@ const DemoLinksContainer = () => {
         <p>Click on the links below to view our prototype.</p>
         <br />
         <p>View our demo video illustrating the key features of our solution.</p>
+        <YouTube videoId='2K43HUGuwxk' />
         <br />
         <ul>
             <Link href={'/demo'}>
