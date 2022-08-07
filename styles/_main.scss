@@ -1,8 +1,12 @@
 // improt SIA fonts
 @import url("https://use.typekit.net/ikv5rmz.css");
 @font-face {
+    font-family: 'Sigvar Serial Bold';
+    src: '../public/fonts/sigvar-serial-bold.ttf';
+}
+@font-face {
     font-family: 'Sigvar Serial';
-    src: './public/sigvar-serial-bold.ttf';
+    src: '../public/fonts/Sigvar-Serial-Regular.ttf';
 }
 
 

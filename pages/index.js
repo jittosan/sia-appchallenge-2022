@@ -1,6 +1,7 @@
 import gsap, { Power3 } from 'gsap'
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 import React, { useEffect, useRef } from 'react'
 import { childComponentSelector } from '../scripts/animations'
 import styles from '../styles/home.module.scss'
@@ -8,51 +9,52 @@ import styles from '../styles/home.module.scss'
 const Home = () => {
     // LOAD-IN ANIMATION
     let containerRef = useRef();
-    useEffect(() => {
-        let tl = gsap.timeline()
-        // fade in page
-        tl.fromTo(containerRef, {
-            opacity: 0
-        }, {
-            opacity: 1,
-            duration: 0.3,
-            ease: Power3.easeInOut
-        })
-        //  fly in plane
-        tl.fromTo(containerRef, {
-            backgroundPositionX: '42%',
-            backgroundPositionY: '40%'
-        }, {
-            backgroundPositionX: '93%',
-            backgroundPositionY: '25%',
-            duration: 24,
-            ease: Power3.easeInOut
-        }, "<50%")
-        // fade in content
-        tl.fromTo(childComponentSelector(containerRef, '.content'), {
-            opacity: 0,
-            y: 30
-        }, {
-            opacity: 1,
-            y: 0,
-            duration: 0.8,
-            ease: Power3.easeInOut
-        }, "<-=0.6")
-    }, [])
+    // useEffect(() => {
+    //     let tl = gsap.timeline()
+    //     // fade in page
+    //     tl.fromTo(containerRef, {
+    //         opacity: 0
+    //     }, {
+    //         opacity: 1,
+    //         duration: 0.3,
+    //         ease: Power3.easeInOut
+    //     })
+    //     //  fly in plane
+    //     tl.fromTo(containerRef, {
+    //         backgroundPositionX: '42%',
+    //         backgroundPositionY: '40%'
+    //     }, {
+    //         backgroundPositionX: '87%',
+    //         backgroundPositionY: '25%',
+    //         duration: 24,
+    //         ease: Power3.easeInOut
+    //     }, "<50%")
+    //     // fade in content
+    //     tl.fromTo(childComponentSelector(containerRef, '.content'), {
+    //         opacity: 0,
+    //         y: 30
+    //     }, {
+    //         opacity: 1,
+    //         y: 0,
+    //         duration: 0.8,
+    //         ease: Power3.easeInOut
+    //     }, "<-=0.6")
+    // }, [])
 
 
     return (
         <>
             <Head>
-                <title>SIA AppChallenge - Team DJ</title>
+                <title>SIA AppChallenge - Team RDJ</title>
             </Head>
             <main className={styles.main} ref={(el) => {containerRef=el}}>
-                <div className={`content initial-fade`}>
-
-                <h1>WELCOME ONBOARD</h1>
-                <p>Team RDJ</p>
-                <DemoLinksContainer />
+                <div className={`content ${styles.content}`}>
+                    <div className={styles.landingSection}>
+                        <h1>KrisMemories</h1>
+                        <p>Team RDJ</p>
+                    </div>
                 </div>
+                <DemoLinksContainer />
                 <div className={styles.brandLogo}>
                     <br />
                 </div>
@@ -74,20 +76,25 @@ const DemoLinksContainer = () => {
         <ul>
             <Link href={'/demo'}>
             <li>
-                <h3>New User</h3>
-                <span>Does not have SingaporeAir app on device.</span>
-                <br />
-                <br />
-                <p>Show IFE features accessible to user through app, incentivising them to download and take-up.</p>
+                <Image layout={'fill'} src={'/images/smiling-girl.jpg'}/>
+                <div>
+                    <h3>New User</h3>
+                    <span>Does not have SingaporeAir app on device.</span>
+                    <br />
+                    <br />
+                    <p>Show IFE features accessible to user through app, incentivising them to download and take-up.</p>
+                </div>
             </li>
             </Link>
             <Link href={'/demo/redirect'}>
             <li>
-                <h3>Existing User</h3>
-                <span>Already has SingaporeAir app on device.</span>
-                <br />
-                <br />
-                <p>Directly bring user to KrisWorld menu, bypassing navigation within app and allowing user direct access to IFE features.</p>
+                <div>
+                    <h3>Existing User</h3>
+                    <span>Already has SingaporeAir app on device.</span>
+                    <br />
+                    <br />
+                    <p>Directly bring user to KrisWorld menu, bypassing navigation within app and allowing user direct access to IFE features.</p>
+                </div>
             </li>
             </Link>
         </ul>

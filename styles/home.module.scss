@@ -1,7 +1,7 @@
 @import 'main';
 
 .main {
-    opacity: 0;
+    // opacity: 0;
     position: relative;
     width: 100vw;
     min-width: 300px;
@@ -21,7 +21,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     backdrop-filter: brightness(50%);
-    overflow: hidden;
+    overflow: auto;
 
     .content {
         padding: 0ch 5ch;
@@ -31,11 +31,6 @@
         align-items: center;
         text-align: center;
         overflow: auto;
-
-        h1 {
-            font-size: 2.2rem;
-            text-align: center;
-        }
         
         p {
             color: inherit;
@@ -85,6 +80,9 @@
             padding: 2ch;
             background-color: whitesmoke;
             color: black;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
             width: 100%;
             cursor: pointer;
             border: 2px solid whitesmoke;
@@ -94,20 +92,44 @@
                 filter: drop-shadow(2px 8px 0px $sia-gold);
             }
 
-            h3 {
-                padding-top: 10ch;
-                line-height: 1ch;
+            img {
+                grid-row: 1;
+                width: 100%;
+                height: 100%;
             }
 
-            span {
-                line-height: 1.2ch;
-                font-weight: 0.6;
-                color: grey;
-            }
-
-            p {
-                line-height: 1.8ch
+            div {
+                grid-row: 2;
+                
+                h3 {
+                    padding-top: 1ch;
+                    line-height: 1ch;
+                }
+                
+                span {
+                    line-height: 1.2ch;
+                    font-weight: 0.6;
+                    color: grey;
+                }
+                
+                p {
+                    line-height: 1.8ch
+                }
             }
         }
+    }
+}
+
+.landingSection {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 2.2rem;
+        font-family: 'proxima-nova';
     }
 }
