@@ -30,15 +30,15 @@ const LandingPageDemo = () => {
         ease:Power3.easeOut
         }, "<=25%") 
         // float up logo
-        tl.fromTo(childComponentSelector(containerRef, '.logo'), {
-        y:50,
-        opacity: 0
-        }, {
-        y:0,
-        opacity: 1,
-        duration:0.9,
-        ease:Power3.easeOut
-        }, "<=40%")
+        // tl.fromTo(childComponentSelector(containerRef, '.logo'), {
+        // y:50,
+        // opacity: 0
+        // }, {
+        // y:0,
+        // opacity: 1,
+        // duration:0.9,
+        // ease:Power3.easeOut
+        // }, "<=40%")
     }, [])
 
     return (

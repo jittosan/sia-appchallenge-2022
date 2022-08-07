@@ -76,11 +76,9 @@ const DemoLinksContainer = () => {
         <ul>
             <Link href={'/demo'}>
             <li>
-                <Image layout={'fill'} src={'/images/smiling-girl.jpg'}/>
                 <div>
                     <h3>New User</h3>
-                    <span>Does not have SingaporeAir app on device.</span>
-                    <br />
+                    <p className={styles.desc}>Does not have SingaporeAir app on device.</p>
                     <br />
                     <p>Show IFE features accessible to user through app, incentivising them to download and take-up.</p>
                 </div>
@@ -90,8 +88,7 @@ const DemoLinksContainer = () => {
             <li>
                 <div>
                     <h3>Existing User</h3>
-                    <span>Already has SingaporeAir app on device.</span>
-                    <br />
+                    <p className={styles.desc}>Already has SingaporeAir app on device.</p>
                     <br />
                     <p>Directly bring user to KrisWorld menu, bypassing navigation within app and allowing user direct access to IFE features.</p>
                 </div>

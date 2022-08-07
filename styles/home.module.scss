@@ -77,12 +77,12 @@
 
         li {
             list-style: none;
-            padding: 2ch;
+            // padding: 2ch;
             background-color: whitesmoke;
             color: black;
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr;
+            grid-template-rows: 0ch 1fr;
             width: 100%;
             cursor: pointer;
             border: 2px solid whitesmoke;
@@ -100,15 +100,16 @@
 
             div {
                 grid-row: 2;
+                padding: 2ch;
                 
                 h3 {
                     padding-top: 1ch;
+                    padding-bottom: 0.4ch;
                     line-height: 1ch;
                 }
                 
-                span {
-                    line-height: 1.2ch;
-                    font-weight: 0.6;
+                .desc {
+                    line-height: 1.8ch;
                     color: grey;
                 }
                 
