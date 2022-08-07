@@ -46,19 +46,17 @@ const Home = () => {
     return (
         <>
             <Head>
-                <title>SIA AppChallenge - Team RDJ</title>
+                <title>SIA AppChallenge 2022 - Team RDJ</title>
+                <link rel='shortcut icon' href='https://play-lh.googleusercontent.com/03_65Ntwo2axa8mAmf7hhuYhWBhCj0gM4cEqKwHjOrBmSuf75wH5ORdRjUAFNt25Kg' />
             </Head>
             <main className={styles.main} ref={(el) => {containerRef=el}}>
-                <div className={`content ${styles.content}`}>
+                {/* <div className={`content ${styles.content}`}>
                     <div className={styles.landingSection}>
                         <h1>KrisMemories</h1>
                         <p>Team RDJ</p>
                     </div>
-                </div>
+                </div> */}
                 <DemoLinksContainer />
-                <div className={styles.brandLogo}>
-                    <br />
-                </div>
             </main>
         </>
     )
@@ -69,12 +67,27 @@ export default Home
 const DemoLinksContainer = () => {
     return(
         <div className={styles.demoLinksContainer}>
-        <h1>Protoype Landing Pages</h1>
-        <p>Click on the links below to view our prototype.</p>
+            <div className={styles.headerSection}>
+                <img src='/images/sia-stacked-linear.svg' />
+                <p>AppChallenge 2022</p>
+            </div>
+            <div className={styles.landingSection}>
+                <h1>Seatback, Relax and Explore</h1>
+                <p>A Warm, Welcome by RDJ</p>
+            </div>
         <br />
+        <h1>Our Idea</h1>
+        <p>SIA is part of your journeys, your memories. We're not just an airline getting you from A to B; we're always by your side. With a fresh blend of NFC in our KrisMemories, let's make our journey ever more delightful. Seatback, relax and explore our vision.</p>
+        
+        <br />
+        <h1>Demo Video</h1>
         <p>View our demo video illustrating the key features of our solution.</p>
-        <YouTube videoId='2K43HUGuwxk' />
+        <YouTube iframeClassName={styles.videoPlayer} videoId='GR3pl3yAUvM' />
         <br />
+        <h1>Protoype Landing Pages</h1>
+        <p>The customer experience is split into 2 segments - existing & new users of the SingaporeAir app.</p>
+        <br />
+        <p>Click on the links below to view our prototype.</p>
         <ul>
             <Link href={'/demo'}>
             <li>
@@ -82,7 +95,7 @@ const DemoLinksContainer = () => {
                     <h3>New User</h3>
                     <p className={styles.desc}>Does not have SingaporeAir app on device.</p>
                     <br />
-                    <p>Show IFE features accessible to user through app, incentivising them to download and take-up.</p>
+                    <p>Show IFE features accessible to user through app, incentivising them to download and take-up the app to access KrisWorld.</p>
                 </div>
             </li>
             </Link>
@@ -97,6 +110,27 @@ const DemoLinksContainer = () => {
             </li>
             </Link>
         </ul>
+        <div className={styles.teamSection}>
+            <p>Brought to you by</p>
+            <img className={styles.teamLogo} src='/icons/rdj-logo.svg' />
+            <p>in the Singapore Airlines AppChallenge 2022</p>
+            <br />
+            <br />
+            <div className={styles.teamGrid}>
+                <div className={styles.teamProfile}>
+                    <img src={'/images/ramm-profile-pic.jpg'} />
+                    <strong>Ramm</strong>
+                </div>
+                <div className={styles.teamProfile}>
+                    <img src={'/images/denise-profile-pic.jpg'} />
+                    <strong>Denise</strong>
+                </div>
+                <div className={styles.teamProfile}>
+                    <img src={'/images/jit-profile-pic.jpg'} />
+                    <strong>Jit</strong>
+                </div>
+            </div>
+        </div>
         </div>
     )
 }

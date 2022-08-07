@@ -4,10 +4,10 @@
     // opacity: 0;
     position: relative;
     width: 100vw;
-    min-width: 300px;
-    height: 100vh;
+    min-width: 450px;
+    height: 100%;
     background-color: $sia-blue;
-    color: whitesmoke;
+    color: white;
     font-family: 'proxima-nova', sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -23,37 +23,19 @@
     backdrop-filter: brightness(50%);
     overflow: auto;
 
+    p {
+        line-height: 1.8ch;
+    }
+
     .content {
-        padding: 0ch 5ch;
+        padding: 0ch 2ch;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         text-align: center;
         overflow: auto;
-        
-        p {
-            color: inherit;
-            
-            span {
-                border-bottom: 2px solid $sia-gold;
-            }
-        }
-    }
-
-    .branding {
         width: 100%;
-        text-align: center;
-        position: absolute;
-        bottom: 15%;
-        width: auto;
-        height: auto;
-        padding: 5ch 0ch;
-
-        img {
-            height: auto;
-            width: 150px;
-        }
     }
 }
 
@@ -63,6 +45,26 @@
     padding: 2ch;
     max-width: 100ch;
     height: auto;
+
+    .headerSection {
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .landingSection {
+        width: 100%;
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'proxima-nova';
+
+        h1 {
+            font-size: 3rem;
+        }
+    }
 
     ul {
         width: 100%;
@@ -121,16 +123,49 @@
     }
 }
 
-.landingSection {
+.videoPlayer {
     width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    min-height: 450px;
+    height: 100%;
+}
 
-    h1 {
-        font-size: 2.2rem;
-        font-family: 'proxima-nova';
+.teamSection {
+    margin: auto;
+    padding: 10ch 0ch;
+    width: 100%;
+    max-width: 60ch;
+    text-align: center;
+    font-size: 1.5ch;
+
+    .teamLogo {
+        height: 5ch;
+        width: auto;
+        margin: 1ch 0ch 0ch 0ch;
+    }
+
+    .teamGrid {
+        width: 100%;
+        margin-top: 2ch;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 10px;
+
+        .teamProfile {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr auto;
+            row-gap: 1ch;
+
+            img {
+                margin: auto;
+                height: 150px;
+                width: 100%;
+                max-width: 150px;
+                overflow: hidden;
+                border-radius: 50%;
+                border: 2px whitesmoke solid;
+            }
+        }
     }
 }
