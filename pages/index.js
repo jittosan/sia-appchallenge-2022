@@ -1,19 +1,58 @@
+import gsap, { Power3 } from 'gsap'
 import Head from 'next/head'
 import Link from 'next/link'
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
+import { childComponentSelector } from '../scripts/animations'
 import styles from '../styles/home.module.scss'
 
 const Home = () => {
-    useEffect(() => {}, [])
+    // LOAD-IN ANIMATION
+    let containerRef = useRef();
+    useEffect(() => {
+        let tl = gsap.timeline()
+        // fade in page
+        tl.fromTo(containerRef, {
+            opacity: 0
+        }, {
+            opacity: 1,
+            duration: 0.3,
+            ease: Power3.easeInOut
+        })
+        //  fly in plane
+        tl.fromTo(containerRef, {
+            backgroundPositionX: '42%',
+            backgroundPositionY: '40%'
+        }, {
+            backgroundPositionX: '93%',
+            backgroundPositionY: '25%',
+            duration: 24,
+            ease: Power3.easeInOut
+        }, "<50%")
+        // fade in content
+        tl.fromTo(childComponentSelector(containerRef, '.content'), {
+            opacity: 0,
+            y: 30
+        }, {
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            ease: Power3.easeInOut
+        }, "<-=0.6")
+    }, [])
+
+
     return (
         <>
             <Head>
                 <title>SIA AppChallenge - Team DJ</title>
             </Head>
-            <main className={styles.main}>
+            <main className={styles.main} ref={(el) => {containerRef=el}}>
+                <div className={`content initial-fade`}>
+
                 <h1>WELCOME ONBOARD</h1>
-                <p>Team DJ</p>
+                <p>Team RDJ</p>
                 <DemoLinksContainer />
+                </div>
                 <div className={styles.brandLogo}>
                     <br />
                 </div>
