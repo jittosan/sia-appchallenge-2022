@@ -121,6 +121,29 @@
             }
         }
     }
+
+    .footnote {
+        text-align: left;
+        margin-top: 5ch;
+        color: whitesmoke;
+        line-height: 1.8ch;
+        width: 100%;
+
+        strong {
+            font-size:large;
+            padding-bottom: 1.5ch;
+        }
+
+        a {
+            text-decoration: underline;
+            text-underline-position: below;
+            text-decoration-color: $sia-yellow;
+            
+            &:hover {
+                background-color: $sia-yellow;
+            }
+        }
+    }
 }
 
 .videoPlayer {

@@ -71,12 +71,13 @@ const DemoLinksContainer = () => {
             </div>
         <br />
         <h1>Our Idea</h1>
-        {/* <p>SIA is part of your journeys, your memories. We &#8217 re not just an airline getting you from A to B; we/'re always by your side. With a fresh blend of NFC in our KrisMemories, let{'&#8217'}s make our journey ever more delightful. Seatback, relax and explore our vision.</p> */}
+        <p>SIA is part of your journeys, your memories. We're not just an airline getting you from A to B; we're always by your side. With a fresh blend of NFC in our KrisMemories, let's make our journey ever more delightful. Seatback, relax and explore our vision.</p>
         
         <br />
         <h1>Demo Video</h1>
         <p>View our demo video illustrating the key features of our solution.</p>
-        <YouTube iframeClassName={styles.videoPlayer} videoId='GR3pl3yAUvM' />
+        {/* <YouTube iframeClassName={styles.videoPlayer} videoId='GR3pl3yAUvM' /> */}
+        <YouTube iframeClassName={styles.videoPlayer} videoId='_aSWwO_WxSY' />
         <br />
         <h1>Protoype Landing Pages</h1>
         <p>The customer experience is split into 2 segments - existing & new users of the SingaporeAir app.</p>
@@ -112,19 +113,25 @@ const DemoLinksContainer = () => {
             <br />
             <div className={styles.teamGrid}>
                 <div className={styles.teamProfile}>
-                    <img src={'/images/ramm-profile-pic.jpg'} />
+                    <Link href={'https://www.linkedin.com/in/rammdarshan/'}><img src={'/images/ramm-profile-pic.jpg'} /></Link>
                     <strong>Ramm</strong>
                 </div>
                 <div className={styles.teamProfile}>
-                    <img src={'/images/denise-profile-pic.jpg'} />
+                    <Link href={'https://www.linkedin.com/in/onglijiedenise/'}><img src={'/images/denise-profile-pic.jpg'} /></Link>
                     <strong>Denise</strong>
                 </div>
                 <div className={styles.teamProfile}>
-                    <img src={'/images/jit-profile-pic.jpg'} />
+                    <Link href={'https://www.linkedin.com/in/ratnajit-sarkar/'}><img src={'/images/jit-profile-pic.jpg'} /></Link>
                     <strong>Jit</strong>
                 </div>
             </div>
+            <br />
         </div>
+        <div className={styles.footnote}>
+            <strong>Team RDJ</strong>
+            <p>Developed with <a href='https://nextjs.org/'>NextJS</a>; Hosted on <a href='https://www.vercel.com'>Vercel</a>.</p>
+            <p>All media taken from <a href='https://www.singaporeair.com/en_UK/nz/media-centre/multimedia-library/'>SIA Media Library</a>; Design taken from <a href='https://design.singaporeair.com.sg/'>SIA Design Language</a></p>
         </div>
+        </div> 
     )
 }
