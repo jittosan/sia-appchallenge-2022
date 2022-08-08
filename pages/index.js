@@ -81,9 +81,9 @@ const DemoLinksContainer = () => {
         <strong>Promoting Take-Up - NFC-tagged Boarding Passes</strong>
         <p>{"The Singapore Airlines mobile app (named SingaporeAir) already has an interface to browse the IFE systems pre-flight from the convenience of the passengers' mobile phones. However, passengers may not be aware of it or not know how to navigate to the appropriate menu."}</p>
         <br />
-        <p>{"Thus, a streamlined funnel is required to bring passengers directly to the IFE interface, whether or not they have the SingaporeAir app installed. Leveraging off an existing touchpoint that passengers already interact with during their flight - their boarding pass - why not introduce functionality that channels passengers to the SingaporeAir app from the boarding pass?"}</p>
+        <p>{"Thus, a streamlined funnel is required to bring passengers directly to the IFE interface, whether or not they have the SingaporeAir app installed. Leveraging off an existing touchpoint that passengers already interact with - their boarding pass - why not introduce functionality that channels passengers to the SingaporeAir app from there?"}</p>
         <br />
-        <p>{"NFC stickers that allows passengers to the SingaporeAir app with 1 action - scan QR code or scan NFC tag."}</p>
+        <p>{"We propose using NFC tags that can be pasted onto boarding passes. These stickers will also have QR codes printed on them. Interacting using either QR/NFC will direct users to the appropriate interfaces to interact with SIA's IFE - all from a single action."}</p>
         <br />
         <strong>Driving User Retention - KrisMemories</strong>
         {/* <p>SIA is part of your journeys, your memories. We're not just an airline getting you from A to B; we're always by your side. With a fresh blend of NFC in our KrisMemories, let's make our journey ever more delightful. Seatback, relax and explore our vision.</p> */}
@@ -103,10 +103,11 @@ const DemoLinksContainer = () => {
 
 
 
-        <h1>Protoype Landing Pages</h1>
-        <p>{"The customer experience is split into 2 segments - existing & new users of the SingaporeAir app."}</p>
+        <h1>Protoype</h1>
+        <p>{"In order to emulate the experience of a passenger using our solutions, we have created a prototype. These show the pages that passengers will be greeted with upon scanning their boarding passes, and the following interactions after."}</p>
         <br />
-        <p>{"Click on the links below to view our prototype."}</p>
+        <p>{"The customer experience is split into 2 segments - existing & new users of the SingaporeAir app. Feel free to explore our prototype by clicking on the tabs below."}</p>
+        <br />
         <ul>
             <Link href={'/demo'}>
             <li>
@@ -134,7 +135,6 @@ const DemoLinksContainer = () => {
             <img className={styles.teamLogo} src='/icons/rdj-logo.svg' />
             <p>in the Singapore Airlines AppChallenge 2022</p>
             <br />
-            <br />
             <div className={styles.teamGrid}>
                 <div className={styles.teamProfile}>
                     <Link href={'https://www.linkedin.com/in/rammdarshan/'}><img src={'/images/ramm-profile-pic.jpg'} /></Link>
@@ -150,6 +150,8 @@ const DemoLinksContainer = () => {
                 </div>
             </div>
             <br />
+            <p>{"Thank you for flying with us. We look forward to flying with you on your next journey."}</p>
+            {/* <br /> */}
         </div>
         <div className={styles.footnote}>
             <strong>Team RDJ</strong>
