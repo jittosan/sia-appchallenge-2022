@@ -80,7 +80,9 @@ const DemoLinksContainer = () => {
         <h1>Our Idea</h1>
         <ul className={styles.ideaSection}>
             <li>
-                <strong>Promoting Take-Up - NFC-tagged Boarding Passes</strong>
+                <h3>Promoting Take-Up: NFC-tagged Boarding Passes</h3>
+                <img src='/images/nfc-boarding-pass.png' />
+
                 <div>
                     <p>{"The Singapore Airlines mobile app (named SingaporeAir) already has an interface to browse the IFE systems pre-flight from the convenience of the passengers' mobile phones. However, passengers may not be aware of it or not know how to navigate to the appropriate menu."}</p>
                     <br />
@@ -91,7 +93,7 @@ const DemoLinksContainer = () => {
                 </div>
             </li>
             <li>
-                <strong>Driving User Retention - KrisMemories</strong>
+                <h3>Driving User Retention: KrisMemories</h3>
                 {/* <p>SIA is part of your journeys, your memories. We're not just an airline getting you from A to B; we're always by your side. With a fresh blend of NFC in our KrisMemories, let's make our journey ever more delightful. Seatback, relax and explore our vision.</p> */}
                 <img src='/images/krismemories-mockup.png' />
                 <br />

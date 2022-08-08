@@ -166,7 +166,7 @@
         row-gap: 2ch;
         column-gap: 2ch;
 
-        strong {
+        h3 {
             grid-row: 1;
             grid-column-start: 1;
             grid-column-end: 3;
@@ -177,6 +177,7 @@
             grid-column: 1;
             height: 300px;
             width: auto;
+            padding: 2ch;
             margin: auto;
         }
 
