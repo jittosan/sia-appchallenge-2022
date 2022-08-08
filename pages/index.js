@@ -78,22 +78,33 @@ const DemoLinksContainer = () => {
 
 
         <h1>Our Idea</h1>
-        <strong>Promoting Take-Up - NFC-tagged Boarding Passes</strong>
-        <p>{"The Singapore Airlines mobile app (named SingaporeAir) already has an interface to browse the IFE systems pre-flight from the convenience of the passengers' mobile phones. However, passengers may not be aware of it or not know how to navigate to the appropriate menu."}</p>
-        <br />
-        <p>{"Thus, a streamlined funnel is required to bring passengers directly to the IFE interface, whether or not they have the SingaporeAir app installed. Leveraging off an existing touchpoint that passengers already interact with - their boarding pass - why not introduce functionality that channels passengers to the SingaporeAir app from there?"}</p>
-        <br />
-        <p>{"We propose using NFC tags that can be pasted onto boarding passes. These stickers will also have QR codes printed on them. Interacting using either QR/NFC will direct users to the appropriate interfaces to interact with SIA's IFE - all from a single action."}</p>
-        <br />
-        <strong>Driving User Retention - KrisMemories</strong>
-        {/* <p>SIA is part of your journeys, your memories. We're not just an airline getting you from A to B; we're always by your side. With a fresh blend of NFC in our KrisMemories, let's make our journey ever more delightful. Seatback, relax and explore our vision.</p> */}
-        <br />
-        <p>{"IFE features are only relevant to passengers up till the point where the flight ends. There isn't much reason to interact with IFE features beyond the flight. There needs to be a feature that stays relevant beyond the flight to get passengers to explore the IFE interface post-flight."}</p>
-        <br />
-        <p>{"We propose the introduction of KrisMemories - a feature to save passengers' media within the SingaporeAir app. Passengers can upload images/videos (ie. memories) of their trip in the SingaporeAir app. The boarding pass will link to this KrisMemories interface post-flight, transforming the boarding pass into a memorabillia in itself."}</p>
-        <br />
-        <p>{"KrisMemories thus provides the reason for passengers to return to the IFE menu post-flight, and in-turn promotes brand loyalty."}</p>
-        <br />
+        <ul className={styles.ideaSection}>
+            <li>
+                <strong>Promoting Take-Up - NFC-tagged Boarding Passes</strong>
+                <div>
+                    <p>{"The Singapore Airlines mobile app (named SingaporeAir) already has an interface to browse the IFE systems pre-flight from the convenience of the passengers' mobile phones. However, passengers may not be aware of it or not know how to navigate to the appropriate menu."}</p>
+                    <br />
+                    <p>{"Thus, a streamlined funnel is required to bring passengers directly to the IFE interface, whether or not they have the SingaporeAir app installed. Leveraging off an existing touchpoint that passengers already interact with - their boarding pass - why not introduce functionality that channels passengers to the SingaporeAir app from there?"}</p>
+                    <br />
+                    <p>{"We propose using NFC tags that can be pasted onto boarding passes. These stickers will also have QR codes printed on them. Interacting using either QR/NFC will direct users to the appropriate interfaces to interact with SIA's IFE - all from a single action."}</p>
+                    <br />
+                </div>
+            </li>
+            <li>
+                <strong>Driving User Retention - KrisMemories</strong>
+                {/* <p>SIA is part of your journeys, your memories. We're not just an airline getting you from A to B; we're always by your side. With a fresh blend of NFC in our KrisMemories, let's make our journey ever more delightful. Seatback, relax and explore our vision.</p> */}
+                <img src='/images/krismemories-mockup.png' />
+                <br />
+                <div>
+                    <p>{"IFE features are only relevant to passengers up till the point where the flight ends. There isn't much reason to interact with IFE features beyond the flight. There needs to be a feature that stays relevant beyond the flight to get passengers to explore the IFE interface post-flight."}</p>
+                    <br />
+                    <p>{"We propose the introduction of KrisMemories - a feature to save passengers' media within the SingaporeAir app. Passengers can upload images/videos (ie. memories) of their trip in the SingaporeAir app. The boarding pass will link to this KrisMemories interface post-flight, transforming the boarding pass into a memorabillia in itself."}</p>
+                    <br />
+                    <p>{"KrisMemories thus provides the reason for passengers to return to the IFE menu post-flight, and in-turn promotes brand loyalty."}</p>
+                    <br />
+                </div>
+            </li>
+        </ul>
 
         <h1>Demo Video</h1>
         <p>{"We illustrate the proposed usage of our solution in the following demo video, highlighting the key features & interfaces that passengers will be interacting with. With a simple scan/tap, passengers will be directed to the appropriate menus to interfacew with SIA's IFE."}</p>
@@ -108,7 +119,7 @@ const DemoLinksContainer = () => {
         <br />
         <p>{"The customer experience is split into 2 segments - existing & new users of the SingaporeAir app. Feel free to explore our prototype by clicking on the tabs below."}</p>
         <br />
-        <ul>
+        <ul className={styles.demoLinks}>
             <Link href={'/demo'}>
             <li>
                 <div>

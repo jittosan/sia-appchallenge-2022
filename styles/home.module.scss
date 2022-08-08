@@ -66,7 +66,7 @@
         }
     }
 
-    ul {
+    .demoLinks {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -151,6 +151,41 @@
     min-height: 450px;
     height: 100%;
     border: solid 1px whitesmoke;
+}
+
+.ideaSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    li {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto 1fr;
+        row-gap: 2ch;
+        column-gap: 2ch;
+
+        strong {
+            grid-row: 1;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        img {
+            grid-row: 2;
+            grid-column: 1;
+            height: 300px;
+            width: auto;
+            margin: auto;
+        }
+
+        div {
+            padding-top: 1ch;
+            grid-row: 2;
+            grid-column: 2;
+        }
+    }
 }
 
 .teamSection {
