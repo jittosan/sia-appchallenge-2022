@@ -71,7 +71,7 @@ const DemoLinksContainer = () => {
             </div>
         <br />
         <h1>Our Idea</h1>
-        <p>SIA is part of your journeys, your memories. We're not just an airline getting you from A to B; we're always by your side. With a fresh blend of NFC in our KrisMemories, let's make our journey ever more delightful. Seatback, relax and explore our vision.</p>
+        {/* <p>SIA is part of your journeys, your memories. We're not just an airline getting you from A to B; we're always by your side. With a fresh blend of NFC in our KrisMemories, let's make our journey ever more delightful. Seatback, relax and explore our vision.</p> */}
         
         <br />
         <h1>Demo Video</h1>
