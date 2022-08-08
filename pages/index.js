@@ -10,37 +10,27 @@ import YouTube from 'react-youtube'
 const Home = () => {
     // LOAD-IN ANIMATION
     let containerRef = useRef();
-    // useEffect(() => {
-    //     let tl = gsap.timeline()
-    //     // fade in page
-    //     tl.fromTo(containerRef, {
-    //         opacity: 0
-    //     }, {
-    //         opacity: 1,
-    //         duration: 0.3,
-    //         ease: Power3.easeInOut
-    //     })
-    //     //  fly in plane
-    //     tl.fromTo(containerRef, {
-    //         backgroundPositionX: '42%',
-    //         backgroundPositionY: '40%'
-    //     }, {
-    //         backgroundPositionX: '87%',
-    //         backgroundPositionY: '25%',
-    //         duration: 24,
-    //         ease: Power3.easeInOut
-    //     }, "<50%")
-    //     // fade in content
-    //     tl.fromTo(childComponentSelector(containerRef, '.content'), {
-    //         opacity: 0,
-    //         y: 30
-    //     }, {
-    //         opacity: 1,
-    //         y: 0,
-    //         duration: 0.8,
-    //         ease: Power3.easeInOut
-    //     }, "<-=0.6")
-    // }, [])
+    useEffect(() => {
+        let tl = gsap.timeline()
+        // fade in page
+        tl.fromTo(containerRef, {
+            opacity: 0,
+        }, {
+            opacity: 1,
+            duration: 0.8,
+            ease: Power3.easeInOut
+        })
+        // fade in content
+        // tl.fromTo(childComponentSelector(containerRef, '.content'), {
+        //     opacity: 0,
+        //     y: 30
+        // }, {
+        //     opacity: 1,
+        //     y: 0,
+        //     duration: 0.8,
+        //     ease: Power3.easeInOut
+        // }, "<50%")
+    }, [])
 
 
     return (
