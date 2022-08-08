@@ -15,12 +15,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    // background-color: #212e36;
     // background-image: url('https://www.singaporeair.com/saar5/images/media-centre/multimedia-library/hires/gs-customerservicedesk-1.jpg');
-    background-size: cover;
-    background: linear-gradient(rgba(20, 20, 20, 0.4), rgba(20, 20, 20, 0.8)), url('https://www.singaporeair.com/saar5/images/media-centre/multimedia-library/hires/acft-a350-3.jpg');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    backdrop-filter: brightness(50%);
+    // background-size: contain;
+    // background: linear-gradient(rgba(20, 20, 20, 0.4), rgba(20, 20, 20, 0.8)), url('https://www.singaporeair.com/saar5/images/media-centre/multimedia-library/hires/acft-a350-3.jpg');
+    // background-repeat: no-repeat;
+    // background-position: 50% 180%;
+    // backdrop-filter: brightness(50%);
     overflow: auto;
 
     p {
@@ -47,9 +48,15 @@
     height: auto;
 
     .headerSection {
+        padding-top: 1ch;
         width: 100%;
         height: auto;
         
+
+        img {
+            height: 50px;
+            width: auto;
+        }
     }
 
     .landingSection {
@@ -125,6 +132,7 @@
     .footnote {
         text-align: left;
         margin-top: 5ch;
+        margin-bottom: 5ch;
         color: whitesmoke;
         line-height: 1.8ch;
         width: 100%;
@@ -165,6 +173,10 @@
         grid-template-rows: auto 1fr;
         row-gap: 2ch;
         column-gap: 2ch;
+        @include mobile-layout {
+            display: flex;
+            flex-direction: column;
+        }
 
         h3 {
             grid-row: 1;
@@ -191,7 +203,7 @@
 
 .teamSection {
     margin: auto;
-    padding: 10ch 0ch;
+    padding: 2ch 0ch;
     width: 100%;
     max-width: 60ch;
     text-align: center;
@@ -228,4 +240,20 @@
             }
         }
     }
+}
+
+.backgroundImage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-color: $sia-blue;
+    // background-image: url('/public/images/smiling-girl.png');
+    background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.8)), url('https://www.singaporeair.com/saar5/images/media-centre/multimedia-library/hires/acft-a350-3.jpg');
+    // background: linear-gradient(rgba(20, 20, 20, 0.1), rgba(20, 20, 20, 0.6), '../public/images/bg-img.png');
+    background-repeat: no-repeat;
+    background-position: 44% 39%;
+    backdrop-filter: brightness(50%);
 }

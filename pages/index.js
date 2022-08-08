@@ -50,7 +50,9 @@ const Home = () => {
                 <link rel='shortcut icon' href='https://play-lh.googleusercontent.com/03_65Ntwo2axa8mAmf7hhuYhWBhCj0gM4cEqKwHjOrBmSuf75wH5ORdRjUAFNt25Kg' />
             </Head>
             <main className={styles.main} ref={(el) => {containerRef=el}}>
+            <div className={styles.backgroundImage}><br /></div>
                 <DemoLinksContainer />
+                
             </main>
         </>
     )
@@ -62,7 +64,7 @@ const DemoLinksContainer = () => {
     return(
         <div className={styles.demoLinksContainer}>
             <div className={styles.headerSection}>
-                <img src='/images/sia-stacked-linear.svg' />
+                <img src='/images/sia-linear-stacked.png' />
                 <p>AppChallenge 2022</p>
             </div>
             <div className={styles.landingSection}>
@@ -143,6 +145,7 @@ const DemoLinksContainer = () => {
             </li>
             </Link>
         </ul>
+
         <div className={styles.teamSection}>
             <p>Brought to you by</p>
             <img className={styles.teamLogo} src='/icons/rdj-logo.svg' />
@@ -171,6 +174,7 @@ const DemoLinksContainer = () => {
             <p>Developed with <a href='https://nextjs.org/'>NextJS</a>; Hosted on <a href='https://www.vercel.com'>Vercel</a>.</p>
             <p>All media taken from <a href='https://www.singaporeair.com/en_UK/nz/media-centre/multimedia-library/'>SIA Media Library</a>; Design taken from <a href='https://design.singaporeair.com.sg/'>SIA Design Language</a></p>
         </div>
+        
         </div> 
     )
 }
